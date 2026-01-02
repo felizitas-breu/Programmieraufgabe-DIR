@@ -41,3 +41,14 @@ function renderCart() {
 
 renderCart();
 
+
+const clearCartBtn = document.getElementById("clear-cart");
+if (clearCartBtn) {
+  clearCartBtn.addEventListener("click", () => {
+    cart = []; 
+    localStorage.removeItem(cartKey); 
+    renderCart(); 
+    updateCartCount(); 
+    alert("Der Warenkorb wurde geleert!");
+  });
+}
