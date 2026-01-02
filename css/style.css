@@ -143,3 +143,12 @@ body {
 .buy-btn:hover {
   background-color: var(--color-lightBlue);
 }
+
+#cart-count {
+  background-color: var(--color-black);
+  color: var(--color-lightBlue);
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
