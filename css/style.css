@@ -152,8 +152,8 @@ body {
 }
 
 #clear-cart {
-  background-color: var(--color-darkViolet); 
-  color: white;
+  background-color: var(--color-darkBlue); 
+  color: var(--col-background);
   border: none;
   padding: 0.8rem 1.2rem;
   border-radius: 8px;
@@ -164,5 +164,21 @@ body {
 }
 
 #clear-cart:hover {
-  background-color: var(--color-lightViolet);
+  background-color: var(--color-lightBlue);
 }  
+
+#checkout-btn {
+  background-color: var(--col-darkViolet); 
+  color: var(--col-background);
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.2s;
+}
+
+#checkout-btn:hover {
+  background-color: var(--col-lightViolet);
+}
