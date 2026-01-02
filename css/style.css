@@ -26,7 +26,7 @@ body {
 }
 
 .logo a {
-  color: #681691;
+  color: #e0a3ff;
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
@@ -46,12 +46,12 @@ body {
 }
 
 .nav-links a:hover {
-  color: #681691;
+  color: #e0a3ff;
 }
 
 .nav-links a.active {
-  color: #681691;
-  border-bottom: 2px solid #681691;
+  color: #e0a3ff;
+  border-bottom: 2px solid #e0a3ff;
   padding-bottom: 0.2rem;
 }
 
