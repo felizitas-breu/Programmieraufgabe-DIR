@@ -1,3 +1,21 @@
+/* Farbpalette:
+    #582259
+    #f18df2 
+    #031626
+    #049dd9
+    #05c7f2
+    #ffffff
+    */
+
+:root{
+  --color-lightViolet: #582259;
+  --color-darkViolet: #f18df2;
+  --color-black: #031626;
+  --color-darkBlue: #049dd9;
+  --color-lightBlue: #05c7f2
+  --color-background: #ffffff
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +24,12 @@
 
 body {
   font-family: Arial;
-  background-color: #f9f7fa;
-  color: #21072e;
+  background-color: var(--color-background);
+  color: var(--color-darkViolet);
 }
 
 .navbar {
-  background-color: #21072e;
+  background-color: var(--color-black);
   padding: 1rem 0;
 }
 
@@ -26,7 +44,7 @@ body {
 }
 
 .logo a {
-  color: #e0a3ff;
+  color: var(--color-lightViolet);
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
@@ -39,19 +57,19 @@ body {
 }
 
 .nav-links a {
-  color: #f9f7fa;
+  color: var(--color-background);
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: #e0a3ff;
+  color: var(--color-lightViolet);
 }
 
 .nav-links a.active {
-  color: #e0a3ff;
-  border-bottom: 2px solid #e0a3ff;
+  color: var(--color-lightViolet);
+  border-bottom: 2px solid var(--color-lightViolet);
   padding-bottom: 0.2rem;
 }
 
