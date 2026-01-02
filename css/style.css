@@ -152,8 +152,8 @@ body {
 }
 
 #clear-cart {
-  background-color: var(--color-darkBlue); 
-  color: var(--col-background);
+  background-color: var(--color-darkViolet); 
+  color: white;
   border: none;
   padding: 0.8rem 1.2rem;
   border-radius: 8px;
@@ -164,12 +164,12 @@ body {
 }
 
 #clear-cart:hover {
-  background-color: var(--color-lightBlue);
+  background-color: var(--color-lightViolet);
 }  
 
 #checkout-btn {
   background-color: var(--col-darkViolet); 
-  color: var(--col-background);
+  color: white;
   border: none;
   padding: 0.8rem 1.2rem;
   border-radius: 8px;
