@@ -9,15 +9,22 @@ function updateCartCount() {
 }
 
 
-document.querySelectorAll(".buy-btn").forEach(button => {
-  button.addEventListener("click", () => {
-    const name = button.dataset.name;
-    const price = parseFloat(button.dataset.price);
+document.addEventListener("DOMContentLoaded", () => {
 
-    cart.push({ name, price });
-    localStorage.setItem(cartKey, JSON.stringify(cart));
-    alert(`${name} wurde in den Warenkorb gelegt!`);
+  document.querySelectorAll(".buy-btn").forEach(button => {
+    button.addEventListener("click", () => {
+      const name = button.dataset.name;
+      const price = parseFloat(button.dataset.price);
+
+      cart.push({ name, price });
+      localStorage.setItem(cartKey, JSON.stringify(cart));
+
+      updateCartCount(); 
+      alert(`${name} wurde in den Warenkorb gelegt!`);
+    });
   });
+
+  updateCartCount();
 });
 
 function renderCart() {
