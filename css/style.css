@@ -5,13 +5,13 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f8fafc;
-  color: #0f172a;
+  font-family: Arial;
+  background-color: #f9f7fa;
+  color: #21072e;
 }
 
 .navbar {
-  background-color: #0f172a;
+  background-color: #21072e;
   padding: 1rem 0;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .logo a {
-  color: #38bdf8;
+  color: #681691;
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
@@ -39,19 +39,19 @@ body {
 }
 
 .nav-links a {
-  color: #e5e7eb;
+  color: #f9f7fa;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: #38bdf8;
+  color: #681691;
 }
 
 .nav-links a.active {
-  color: #38bdf8;
-  border-bottom: 2px solid #38bdf8;
+  color: #681691;
+  border-bottom: 2px solid #681691;
   padding-bottom: 0.2rem;
 }
 
