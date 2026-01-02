@@ -4,7 +4,7 @@ let cart = JSON.parse(localStorage.getItem(cartKey)) || [];
 
 function updateCartCount() {
   const countSpan = document.getElementById("cart-count");
-  if (!countSpan) return; // Falls Element nicht existiert (z. B. auf Warenkorb-Seite)
+  if (!countSpan) return; 
   countSpan.textContent = cart.length; // Anzahl der Produkte
 }
 
