@@ -59,3 +59,22 @@ if (clearCartBtn) {
     alert("Der Warenkorb wurde geleert!");
   });
 }
+
+
+const checkoutBtn = document.getElementById("checkout-btn");
+if (checkoutBtn) {
+  checkoutBtn.addEventListener("click", () => {
+    if (cart.length === 0) {
+      alert("Dein Warenkorb ist leer!");
+      return;
+    }
+
+    let total = cart.reduce((sum, item) => sum + item.price, 0);
+    alert(`Vielen Dank für deinen Einkauf!\nGesamtbetrag: ${total.toFixed(2)} €`);
+
+    cart = [];
+    localStorage.removeItem(cartKey);
+    renderCart();
+    updateCartCount();
+  });
+}
