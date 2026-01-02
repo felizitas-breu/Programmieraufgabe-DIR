@@ -2,6 +2,13 @@ const cartKey = "warenkorb";
 
 let cart = JSON.parse(localStorage.getItem(cartKey)) || [];
 
+function updateCartCount() {
+  const countSpan = document.getElementById("cart-count");
+  if (!countSpan) return; // Falls Element nicht existiert (z. B. auf Warenkorb-Seite)
+  countSpan.textContent = cart.length; // Anzahl der Produkte
+}
+
+
 document.querySelectorAll(".buy-btn").forEach(button => {
   button.addEventListener("click", () => {
     const name = button.dataset.name;
