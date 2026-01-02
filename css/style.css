@@ -120,7 +120,7 @@ body {
 
 .product-card p {
   margin-bottom: 1rem;
-  color: var(--color-lightViolet);
+  color: var(--color-background);
 }
 
 .price {
