@@ -1,4 +1,15 @@
-/* --- Navigation --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
 .navbar {
   background-color: #0f172a;
   padding: 1rem 0;
@@ -38,3 +49,18 @@
   color: #38bdf8;
 }
 
+.nav-links a.active {
+  color: #38bdf8;
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 0.2rem;
+}
+
+.content {
+  width: 90%;
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
+.content h1 {
+  margin-bottom: 1rem;
+}
