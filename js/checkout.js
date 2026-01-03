@@ -32,6 +32,19 @@ if (form) {
       return;
     }
 
+    if (hasStudentProduct) {
+      if (!studentProofInput.files || studentProofInput.files.length === 0) {
+        alert("Bitte lade eine gültige Inskriptionsbestätigung als PDF hoch.");
+        return;
+      }
+
+      const file = studentProofInput.files[0];
+      if (file.type !== "application/pdf") {
+        alert("Die Inskriptionsbestätigung muss ein PDF sein.");
+        return;
+      }
+    }
+
     alert("Vielen Dank für Ihr Interesse! Der Kauf wurde nicht abgeschlossen, da diese Webseite nur zur Übung einer Lehrveranstaltung erstellt wurde.");
 
     localStorage.removeItem(cartKey);
