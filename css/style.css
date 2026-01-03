@@ -168,7 +168,7 @@ body {
 }  
 
 #checkout-btn {
-  background-color: var(--col-darkViolet); 
+  background-color: var(--color-darkViolet); 
   color: white;
   border: none;
   padding: 0.8rem 1.2rem;
@@ -180,5 +180,5 @@ body {
 }
 
 #checkout-btn:hover {
-  background-color: var(--col-lightViolet);
+  background-color: var(--color-lightViolet);
 }
