@@ -69,12 +69,6 @@ if (checkoutBtn) {
       return;
     }
 
-    let total = cart.reduce((sum, item) => sum + item.price, 0);
-    alert(`Vielen Dank für deinen Einkauf!\nGesamtbetrag: ${total.toFixed(2)} €`);
-
-    cart = [];
-    localStorage.removeItem(cartKey);
-    renderCart();
-    updateCartCount();
+    window.location.href = "checkout.html";
   });
 }
