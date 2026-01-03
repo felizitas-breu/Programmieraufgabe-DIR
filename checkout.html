@@ -1,43 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>SoftStart – Webshop</title>
+  <title>ScoreFollower | Webshop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- ===== Navigation (immer ganz oben im body) ===== -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="logo">
-        <a href="index.html">SoftStart 🚀</a>
+        <a href="index.html">ScoreFollower 🎶</a>
       </div>
 
       <ul class="nav-links">
         <li><a href="index.html" class="active">Start</a></li>
         <li><a href="products.html">Produkte</a></li>
-        <li><a href="cart.html">Warenkorb</a></li>
+        <li><a href="cart.html">Warenkorb<span id="cart-count">0</span></a></li>
       </ul>
     </div>
   </nav>
-  <!-- ===== Ende Navigation ===== -->
 
-  <!-- ===== Seiteninhalt ===== -->
-  <main class="content">
-    <h1>Willkommen bei SoftStart</h1>
-    <p>
-      Wir entwickeln moderne Softwarelösungen für Studierende,
-      Entwickler:innen und Start-Ups.
-    </p>
-  </main>
-  <!-- ===== Ende Seiteninhalt ===== -->
 
-  <!-- JavaScript -->
-  <script src="js/cart.js"></script>
+  <section class="checkout">
+    <h1>Checkout</h1>
+
+    <h2>Deine Produkte</h2>
+    <ul id="checkout-items"></ul>
+    <p id="checkout-total">Gesamt: 0 €</p>
+
+    <h2>Bezahlinformationen</h2>
+    <form id="checkout-form">
+      <label>
+        Name
+        <input type="text" required />
+      </label>
+
+      <label>
+        E-Mail
+        <input type="email" required />
+      </label>
+
+      <label>
+        Zahlungsmethode
+        <select required>
+          <option value="">Bitte wählen</option>
+          <option>Kreditkarte</option>
+          <option>PayPal</option>
+          <option>Online-Überweisung</option>
+        </select>
+      </label>
+
+      <button type="submit" id="pay-btn">Jetzt bezahlen</button>
+    </form>
+  </section>
+
+  <script src="js/cart.js" defer></script>
+  <script src="checkout.js"></script>
 </body>
 </html>
-
