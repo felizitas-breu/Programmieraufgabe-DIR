@@ -40,3 +40,15 @@ if (form) {
     window.location.href = "index.html";
   });
 }
+
+
+const studentProofWrapper = document.getElementById("student-proof-wrapper");
+const studentProofInput = document.getElementById("student-proof");
+
+const hasStudentProduct = cart.some(item =>
+  item.name.toLowerCase().includes("student")
+);
+
+if (hasStudentProduct && studentProofWrapper) {
+  studentProofWrapper.style.display = "block";
+}
