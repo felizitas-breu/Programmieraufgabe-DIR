@@ -2,8 +2,8 @@
     #582259
     #f18df2 
     #031626
+    #1004b8
     #049dd9
-    #05c7f2
     #ffffff
     */
 
@@ -11,8 +11,8 @@
   --color-lightViolet: #f18df2;
   --color-darkViolet: #582259;
   --color-black: #031626;
-  --color-darkBlue: #049dd9;
-  --color-lightBlue: #05c7f2;
+  --color-darkBlue: #1004b8;
+  --color-lightBlue: #049dd9;
   --color-background: #ffffff;
 }
 
