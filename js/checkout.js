@@ -28,7 +28,7 @@ if (form) {
     e.preventDefault();
 
     if (cart.length === 0) {
-      alert("Dein Warenkorb ist leer!");
+      alert("Der Warenkorb ist leer!");
       return;
     }
 
