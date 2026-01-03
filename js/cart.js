@@ -65,7 +65,7 @@ const checkoutBtn = document.getElementById("checkout-btn");
 if (checkoutBtn) {
   checkoutBtn.addEventListener("click", () => {
     if (cart.length === 0) {
-      alert("Dein Warenkorb ist leer!");
+      alert("Der Warenkorb ist leer!");
       return;
     }
 
