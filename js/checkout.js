@@ -32,7 +32,7 @@ if (form) {
       return;
     }
 
-    alert("Bezahlung erfolgreich!");
+    alert("Vielen Dank für Ihr Interesse! Der Kauf wurde nicht abgeschlossen, da diese Webseite nur zur Übung einer Lehrveranstaltung erstellt wurde.");
 
     localStorage.removeItem(cartKey);
     cart = [];
