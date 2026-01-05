@@ -21,9 +21,15 @@
         const logoLink = document.getElementById("logo-link");
         const jingle = document.getElementById("logo-jingle");
       
-        logoLink.addEventListener("click", () => {
-          jingle.currentTime = 0; // von vorne abspielen
+        logoLink.addEventListener("click", (event) => {
+          event.preventDefault(); // <-- DAS fehlt bei dir
+      
+          jingle.currentTime = 0;
           jingle.play();
+      
+          jingle.onended = () => {
+            window.location.href = logoLink.href;
+          };
         });
       </script>
 
