@@ -77,3 +77,11 @@ const sound = document.getElementById("cart-sound");
 document.querySelectorAll(".buy-btn").forEach(btn =>
   btn.addEventListener("click", () => sound.play())
 );
+
+const logoLink = document.getElementById("logo-link");
+const jingle = document.getElementById("logo-jingle");
+
+logoLink.addEventListener("click", () => {
+  jingle.currentTime = 0; // von vorne abspielen
+  jingle.play();
+});
