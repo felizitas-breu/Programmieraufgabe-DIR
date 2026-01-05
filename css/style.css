@@ -339,3 +339,9 @@ main {
   width: auto;       
   display: block;    
 }
+
+.brand-logo {
+  height: 80px;    
+  width: auto;     
+  display: block;
+}
