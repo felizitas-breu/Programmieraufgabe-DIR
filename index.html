@@ -16,20 +16,14 @@
           <img src="logo.png" alt="ScoreFollower Logo" class="logo-img">
         </a>
       </div>
-      <audio id="logo-jingle" src="jingle.wav"></audio>
+      <audio id="logo-jingle" src="jingle.wav" volume="0.4"></audio>
       <script>
         const logoLink = document.getElementById("logo-link");
         const jingle = document.getElementById("logo-jingle");
       
-        logoLink.addEventListener("click", (event) => {
-          event.preventDefault(); // <-- DAS fehlt bei dir
-      
-          jingle.currentTime = 0;
+        logoLink.addEventListener("click", () => {
+          jingle.currentTime = 0; // von vorne abspielen
           jingle.play();
-      
-          jingle.onended = () => {
-            window.location.href = logoLink.href;
-          };
         });
       </script>
 
