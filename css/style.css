@@ -333,3 +333,9 @@ main {
   padding: 0.5rem;
   font-size: 1rem;
 }
+
+.logo-img {
+  height: 50px;    
+  width: auto;       
+  display: block;    
+}
