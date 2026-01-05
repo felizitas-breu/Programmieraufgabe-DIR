@@ -72,3 +72,8 @@ if (checkoutBtn) {
     window.location.href = "checkout.html";
   });
 }
+
+const sound = document.getElementById("cart-sound");
+document.querySelectorAll(".buy-btn").forEach(btn =>
+  btn.addEventListener("click", () => sound.play())
+);
