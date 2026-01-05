@@ -11,8 +11,8 @@
   --color-lightViolet: #f18df2;
   --color-darkViolet: #582259;
   --color-black: #031626;
-  --color-darkBlue: #312999;
-  --color-lightBlue: #049dd9;
+  --color-darkBlue: #049dd9;
+  --color-lightBlue: #D8EEF2;
   --color-background: #ffffff;
 }
 
@@ -141,7 +141,7 @@ main {
 
 .buy-btn {
   background-color: var(--color-darkBlue);
-  color: white;
+  color: var(--color-black);
   border: none;
   padding: 0.8rem;
   border-radius: 8px;
