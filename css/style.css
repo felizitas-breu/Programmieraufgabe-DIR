@@ -185,7 +185,7 @@ main {
 }
 
 #clear-cart:hover {
-  background-color: var(--color-lightViolet);
+  background-color: var(--color-darkBlue);
 }  
 
 #checkout-btn {
@@ -201,7 +201,7 @@ main {
 }
 
 #checkout-btn:hover {
-  background-color: var(--color-lightViolet);
+  background-color: var(--color-darkBlue);
 }
 
 .checkout {
