@@ -252,7 +252,7 @@ main {
 }
 
 #pay-btn:hover {
-  background-color: var(--color-lightViolet);
+  background-color: var(--color-darkBlue);
 }
 
 .site-footer {
