@@ -93,6 +93,16 @@ main {
   margin-bottom: 1rem;
 }
 
+.content h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .products {
   width: 90%;
   max-width: 1200px;
